@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Lifeline - Emergency Response</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Project Lifeline</h1>
+    <p>Your Automated Emergency Assistant</p>
+  </header>
+
+  <main>
+    <div class="emergency-form">
+      <h2><span class="icon">⚠️</span> Report an Emergency</h2>
+      <p>Select the nature of your emergency. We will automatically detect your location.</p>
+
+      <select id="emergency-type">
+        <option value="cardiac_arrest">Cardiac Arrest / Chest Pain</option>
+        <option value="severe_trauma">Severe Trauma / Accident</option>
+        <option value="breathing_difficulty">Breathing Difficulty</option>
+        <option value="stroke">Suspected Stroke</option>
+        <option value="severe_burn">Severe Burn</option>
+        <option value="unconscious">Unconscious Person</option>
+      </select>
+
+      <button id="help-button">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front">GET HELP NOW</span>
+      </button>
+    </div>
+
+    <div id="status-panel" class="status-panel hidden">
+      <h2>Response Activated</h2>
+      <ul id="status-updates">
+      </ul>
+    </div>
+  </main>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
